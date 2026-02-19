@@ -24,5 +24,15 @@ class UserSeeder extends Seeder
             'role_id' => 'admin',
             'company_id' => 'warm',
         ]);
+        User::create([
+            'user_id' => 'demo',
+            'last_name' => 'デモユーザー',
+            'first_name' => '',
+            'email' => 'demo@warm.co.jp',
+            'password' => bcrypt('demo'),
+            'status' => 1,
+            'role_id' => 'user',
+            'company_id' => 'demo',
+        ]);
     }
 }
