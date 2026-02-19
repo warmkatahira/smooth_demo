@@ -99,15 +99,15 @@ Route::middleware('common')->group(function (){
         Route::controller(ShippingWorkEndHistoryController::class)->prefix('shipping_work_end_history')->name('shipping_work_end_history.')->group(function(){
             Route::get('', 'index')->name('index');
         });
-        // +-+-+-+-+-+-+-+- 出荷履歴 +-+-+-+-+-+-+-+-
-        Route::controller(ShippingHistoryController::class)->prefix('shipping_history')->name('shipping_history.')->group(function(){
-            Route::get('', 'index')->name('index');
-        });
-        Route::controller(ShippingHistoryDownloadController::class)->prefix('shipping_history_download')->name('shipping_history_download.')->group(function(){
-            Route::get('download', 'download')->name('download');
-        });
-        Route::controller(ShippingActualDownloadController::class)->prefix('shipping_actual_download')->name('shipping_actual_download.')->group(function(){
-            Route::get('download', 'download')->name('download');
-        });
+    });
+    // +-+-+-+-+-+-+-+- 出荷履歴 +-+-+-+-+-+-+-+-
+    Route::controller(ShippingHistoryController::class)->prefix('shipping_history')->name('shipping_history.')->group(function(){
+        Route::get('', 'index')->name('index');
+    });
+    Route::controller(ShippingHistoryDownloadController::class)->prefix('shipping_history_download')->name('shipping_history_download.')->group(function(){
+        Route::get('download', 'download')->name('download');
+    });
+    Route::controller(ShippingActualDownloadController::class)->prefix('shipping_actual_download')->name('shipping_actual_download.')->group(function(){
+        Route::get('download', 'download')->name('download');
     });
 });
