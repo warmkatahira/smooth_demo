@@ -14,10 +14,9 @@ class StockSeeder extends Seeder
      */
     public function run(): void
     {
-        Stock::create(['base_id' => 'Hiroshima', 'item_id' => 1, 'total_stock' => 100, 'available_stock' => 100]);
-        Stock::create(['base_id' => 'Hiroshima', 'item_id' => 2, 'total_stock' => 100, 'available_stock' => 100]);
-        Stock::create(['base_id' => 'Hiroshima', 'item_id' => 3, 'total_stock' => 100, 'available_stock' => 100]);
-        Stock::create(['base_id' => 'Hiroshima', 'item_id' => 4, 'total_stock' => 100, 'available_stock' => 100]);
-        Stock::create(['base_id' => 'Hiroshima', 'item_id' => 5, 'total_stock' => 100, 'available_stock' => 100]);
+        Stock::create(['base_id' => 'xxx', 'item_id' => 1, 'total_stock' => 100, 'available_stock' => 100]);
+        Stock::create(['base_id' => 'xxx', 'item_id' => 2, 'total_stock' => 200, 'available_stock' => 200]);
+        Stock::create(['base_id' => 'xxx', 'item_id' => 3, 'total_stock' => 12, 'available_stock' => 12]);
+        Stock::create(['base_id' => 'xxx', 'item_id' => 4, 'total_stock' => 59, 'available_stock' => 59]);
     }
 }

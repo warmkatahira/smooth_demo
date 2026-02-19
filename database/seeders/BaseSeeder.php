@@ -15,8 +15,8 @@ class BaseSeeder extends Seeder
     public function run(): void
     {
         Base::create([
-            'base_id' => 'Hiroshima',
-            'base_name' => '広島営業所',
+            'base_id' => 'xxx',
+            'base_name' => 'XXX倉庫',
             'base_color_code' => '#e5fff4',
             'mieru_customer_code' => 'demo',
             'sort_order' => 1,
