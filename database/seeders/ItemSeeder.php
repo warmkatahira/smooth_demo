@@ -27,7 +27,7 @@ class ItemSeeder extends Seeder
         ]);
         Item::create([
             'item_code' => 'a-1-0100',
-            'item_jan_code' => '22222222222222',
+            'item_jan_code' => '2222222222222',
             'item_name' => '商品A -1.00',
             'item_category' => 'コンタクトレンズ',
             'exp_start_position' => 16,
