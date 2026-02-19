@@ -15,11 +15,11 @@ class ShipperSeeder extends Seeder
     public function run(): void
     {
         Shipper::create([
-            'shipper_company_name' => '株式会社 百道',
-            'shipper_name' => 'レンズショップmomo/モモ',
-            'shipper_zip_code' => '810-0001',
-            'shipper_address' => '福岡県福岡市中央区天神2丁目3-10 天神パインクレスト716',
-            'shipper_tel' => '092-577-0150',
+            'shipper_company_name' => '株式会社demo',
+            'shipper_name' => 'demoショップ',
+            'shipper_zip_code' => '340-0822',
+            'shipper_address' => '埼玉県八潮市大瀬921-2',
+            'shipper_tel' => '048-995-0001',
         ]);
     }
 }
