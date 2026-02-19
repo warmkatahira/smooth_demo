@@ -30,7 +30,7 @@ class PrefectureSeeder extends Seeder
             // 追加
             Prefecture::create([
                 'prefecture_name' => $prefecture,
-                'shipping_base_id' => 'Hiroshima',
+                'shipping_base_id' => 'xxx',
             ]);
         }
     }
